@@ -1,17 +1,16 @@
 @import "compass/reset";
 @import "base";
 @import "font";
+@import "buttons";
 
 :root {
     // couleur secondaire = --nomCouleur-tauxDeBlancDansLaCouleurArrondiALaDizaineLaPlusProche
     --noir-main: #1F1F1F;
-    --noir-20: #2B2B2B;
     --blanc-main: #FFFFFF;
-    --gris-main: #F8F8F8;
-    --vert-main: #49A842;
-    --rouge-main: #F5171A;
-    --vert-50: #1D6D3B;
-    --vert-80: #C6DACE;
+    --gris-main: #D9D9D9;
+    --bleu-main: #3A60C4;
+    --vert-main: #52CE34;
+    --rouge-main:#E30613;
 }
 p {
     font-family: "Marianne-regular";
@@ -19,8 +18,31 @@ p {
 }
 
 .index{
-    h1{
-        font-size: 3rem;
-        font-family: "Marianne-bold";
+    height: 100vh;
+    .logo-crous{
+        position: absolute;
+        max-width: 85px;
+        max-height: 85px;
+        left: 50px;
+        top: 50px;
+    }
+    .row{
+        height: 100%;
+        h1{
+            font-size: 3rem;
+            font-family: "Marianne-bold";
+            margin-bottom: 64px;
+        }
+    }
+    .cloud-1{
+        position: absolute;
+        width: 17%;
+        right: 22%;
+        top: 20%;
+    }
+    .cloud-2{
+        position: absolute;
+        bottom: 30%;
+        left: 20%;
     }
 }

@@ -1,0 +1,24 @@
+.btn{
+    padding: 15px 38px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 90px;
+    font-family: "Marianne-regular", sans-serif;
+    transition: all .5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    display: inline-block;
+    cursor: pointer;
+    img{
+        vertical-align: middle;
+        margin-left: 15px;
+        transition: all .5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    }
+    &.btn-red{
+        background-color: var(--rouge-main);
+            color: var(--blanc-main);
+    }
+    &:hover{
+        img{
+            transform: rotate(45deg) translate(10px, -10px);
+        }
+    }
+}

@@ -384,26 +384,81 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "Marianne-bold";
   src: url("../typo/Marianne-bold.woff2");
 }
-/* line 5, ../sass/app.scss */
-:root {
-  --noir-main: #1F1F1F;
-  --noir-20: #2B2B2B;
-  --blanc-main: #FFFFFF;
-  --gris-main: #F8F8F8;
-  --vert-main: #49A842;
-  --rouge-main: #F5171A;
-  --vert-50: #1D6D3B;
-  --vert-80: #C6DACE;
+/* line 1, ../sass/_buttons.scss */
+.btn {
+  padding: 15px 38px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 90px;
+  font-family: "Marianne-regular", sans-serif;
+  transition: all 0.5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 10, ../sass/_buttons.scss */
+.btn img {
+  vertical-align: middle;
+  margin-left: 15px;
+  transition: all 0.5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+/* line 15, ../sass/_buttons.scss */
+.btn.btn-red {
+  background-color: var(--rouge-main);
+  color: var(--blanc-main);
+}
+/* line 20, ../sass/_buttons.scss */
+.btn:hover img {
+  transform: rotate(45deg) translate(10px, -10px);
 }
 
-/* line 16, ../sass/app.scss */
+/* line 6, ../sass/app.scss */
+:root {
+  --noir-main: #1F1F1F;
+  --blanc-main: #FFFFFF;
+  --gris-main: #D9D9D9;
+  --bleu-main: #3A60C4;
+  --vert-main: #52CE34;
+  --rouge-main: #E30613;
+}
+
+/* line 15, ../sass/app.scss */
 p {
   font-family: "Marianne-regular";
   font-size: 1.2rem;
 }
 
+/* line 20, ../sass/app.scss */
+.index {
+  height: 100vh;
+}
 /* line 22, ../sass/app.scss */
-.index h1 {
+.index .logo-crous {
+  position: absolute;
+  max-width: 85px;
+  max-height: 85px;
+  left: 50px;
+  top: 50px;
+}
+/* line 29, ../sass/app.scss */
+.index .row {
+  height: 100%;
+}
+/* line 31, ../sass/app.scss */
+.index .row h1 {
   font-size: 3rem;
   font-family: "Marianne-bold";
+  margin-bottom: 64px;
+}
+/* line 37, ../sass/app.scss */
+.index .cloud-1 {
+  position: absolute;
+  width: 17%;
+  right: 22%;
+  top: 20%;
+}
+/* line 43, ../sass/app.scss */
+.index .cloud-2 {
+  position: absolute;
+  bottom: 30%;
+  left: 20%;
 }
