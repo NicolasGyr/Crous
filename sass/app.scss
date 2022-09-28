@@ -1,0 +1,26 @@
+@import "compass/reset";
+@import "base";
+@import "font";
+
+:root {
+    // couleur secondaire = --nomCouleur-tauxDeBlancDansLaCouleurArrondiALaDizaineLaPlusProche
+    --noir-main: #1F1F1F;
+    --noir-20: #2B2B2B;
+    --blanc-main: #FFFFFF;
+    --gris-main: #F8F8F8;
+    --vert-main: #49A842;
+    --rouge-main: #F5171A;
+    --vert-50: #1D6D3B;
+    --vert-80: #C6DACE;
+}
+p {
+    font-family: "Marianne-regular";
+    font-size: 1.2rem;
+}
+
+.index{
+    h1{
+        font-size: 3rem;
+        font-family: "Marianne-bold";
+    }
+}
