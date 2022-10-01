@@ -12,20 +12,27 @@
     --vert-main: #52CE34;
     --rouge-main:#E30613;
 }
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
 p {
     font-family: "Marianne-regular";
     font-size: 1.2rem;
 }
 
+
+.logo-crous{
+    position: absolute;
+    max-width: 85px;
+    max-height: 85px;
+    left: 50px;
+    top: 50px;
+}
 .index{
     height: 100vh;
-    .logo-crous{
-        position: absolute;
-        max-width: 85px;
-        max-height: 85px;
-        left: 50px;
-        top: 50px;
-    }
     .row{
         height: 100%;
         h1{
@@ -45,4 +52,267 @@ p {
         bottom: 30%;
         left: 20%;
     }
+}
+.etape-1{
+    width: 100%;
+    .cloud-1{
+        position: absolute;
+        width: 265px;
+        top: 15%;
+        cursor: move;
+        z-index: 1;
+    }
+    .flying-text{
+        position: absolute;
+        top: 22%;
+        z-index: 0;
+    }
+    .cloud-2{
+        position: absolute;
+        width: 120px;
+        left: 51%;
+        top: 10%;
+    }
+    .cloud-3{
+        position: absolute;
+        width: 356px;
+        right: -10%;
+        bottom: 30%;
+    }
+    .cloud-4{
+        position: absolute;
+        width : 176px;
+        bottom: 12%;
+        left: 25%;
+    }
+        
+    .easter-egg{
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        color: var(--blanc-main);
+    }
+    .titre{
+        margin-top: 80px;
+        h1 {
+            font-family: "Marianne-regular";
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+    .form{
+        margin-top: 133px;
+        .questions{
+            height: fit-content;
+            .question{
+                margin-bottom: 80px;
+                h2{
+                    font-family: "Marianne-bold";
+                    font-size: 1.1rem;
+                    span{
+                        font-size: 0.8rem;
+                        font-family: "Marianne-light";
+                    }
+                    margin-bottom: 16px;
+                }
+                #Q1{
+                    text-transform: uppercase;
+                }
+                .check-1{
+                    width: 54px;
+                    height: 56px;
+                    border-radius: 8px;
+                    background-color: var(--bleu-main);
+                    border: none;
+                    cursor: pointer;
+                    svg{
+                        color: var(--blanc-main);
+                    }
+                    &.green{
+                        background-color: var(--vert-main);
+                    }
+                    &.red{
+                        background-color: var(--rouge-main);
+                    }
+                    
+                }
+                .check-2{
+                    width: 54px;
+                    height: 56px;
+                    border-radius: 8px;
+                    background-color: var(--bleu-main);
+                    cursor: pointer;
+                    border: none;
+                    svg{
+                        color: var(--blanc-main);
+                    }
+                    &.green {
+                        background-color: var(--vert-main);
+                    }
+
+                    &.red {
+                        background-color: var(--rouge-main);
+                    }
+                }
+                .check-3{
+                    width: 54px;
+                    height: 56px;
+                    border-radius: 8px;
+                    background-color: var(--bleu-main);
+                    cursor: pointer;
+                    border: none;
+                    svg{
+                        color: var(--blanc-main);
+                    }
+                    &.green {
+                        background-color: var(--vert-main);
+                    }
+
+                    &.red {
+                        background-color: var(--rouge-main);
+                    }
+                }
+                .wrong{
+                    color: var(--rouge-main);
+                    font-size: 0.8rem;
+                    font-family: "Marianne-light";
+                }
+                .wrong-2{
+                    color: var(--rouge-main);
+                    font-size: 0.8rem;
+                    font-family: "Marianne-light";
+                }
+                .wrong-3{
+                    color: var(--rouge-main);
+                    font-size: 0.8rem;
+                    font-family: "Marianne-light";
+                }
+            }
+        }
+    }
+    .input{
+        justify-content: space-between;
+        display: flex;
+        input{
+            width: 90%;
+            height: 56px;
+            border: 1px solid var(--gris-main);
+            border-radius: 8px;
+        }
+    }
+}
+.curse{
+    .cloud-1 {
+        position: absolute;
+        width: 265px;
+        top: 15%;
+        z-index: 1;
+    }
+    .cloud-2 {
+        position: absolute;
+        width: 120px;
+        left: 51%;
+        top: 10%;
+    }
+    .cloud-3 {
+        position: absolute;
+        width: 356px;
+        right: -10%;
+        bottom: 30%;
+    }
+    .cloud-4 {
+        position: absolute;
+        width: 176px;
+        bottom: 12%;
+        left: 25%;
+    }
+}
+.text-cursed{
+    h1{
+        font-size: 1.8rem;
+        font-family: "Marianne-regular";
+        margin-bottom: 10px;
+    }
+    h2{
+        font-size: 1.6rem;
+        font-family: "Marianne-regular";
+        margin-bottom: 100px;
+    }
+    input {
+        width: 90%;
+        height: 56px;
+        border: 1px solid var(--gris-main);
+        border-radius: 8px;
+    }
+    .col-4{
+        height: 50vh;
+        margin-top: 10%;
+        .input {
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+            .check-cursed {
+                width: 54px;
+                height: 56px;
+                border-radius: 8px;
+                background-color: var(--bleu-main);
+                border: none;
+                cursor: pointer;
+                svg {
+                    color: var(--blanc-main);
+                }        
+                &.red {
+                    background-color: var(--rouge-main);
+                }
+            }
+        }
+    }
+}
+.lab{
+    .cloud-1 {
+        position: absolute;
+        width: 265px;
+        top: 15%;
+        z-index: 1;
+    }
+    .cloud-2 {
+        position: absolute;
+        width: 120px;
+        right: 10%;
+        top: 10%;
+    }
+    .cloud-3 {
+        position: absolute;
+        width: 356px;
+        right: -10%;
+        bottom: 30%;
+    }
+    .cloud-4 {
+        position: absolute;
+        width: 176px;
+        bottom: 12%;
+        left: 10%;
+    }
+}
+.text-fin{
+    h1{
+        margin-top: 25vh;
+        font-size: 2.5rem;
+        font-family: "Marianne-bold";
+        margin-bottom: 24px;
+    }
+    h2{
+        font-size: 1.5rem;
+        font-family: "Marianne-regular";
+        margin-bottom: 64px;
+    }
+}
+
+.copyright{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    font-family: "Marianne-light";
 }

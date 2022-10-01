@@ -9,8 +9,70 @@
     <title>escape game cité du jeu - étape 1</title>
 </head>
 <body>
-    
+    <main role="main">
+        <div class="container">
+            <div class="etape-1">                
+                <img class="cloud-1 dragme" id="draggable" draggable="true" src="image/vector/cloud.svg" alt="nuages">
+                <p class="flying-text">Tu m'as trouvé, Sherlock !</p>
+                <img class="cloud-2"  draggable="false" src="image/vector/cloud.svg" alt="nuages">
+                <img class="cloud-3"  draggable ="false" src="image/vector/cloud.svg" alt="nuages">
+                <img class="cloud-4"  draggable="false" src="image/vector/cloud.svg" alt="nuages">
+                <img class="logo-crous" src="image/logo-crous.png" alt="logo crous">
+                <p class="easter-egg">42</p>
+                <div class="titre row justify-content-center">
+                    <h1>Étape n°1</h1>
+                </div>
+                <div class="form row justify-content-center">
+                    <div class="col-4">
+                        <div class="questions row collumn">
+                            <div class="question">
+                                <h2>Rentrez le code à 12 charactères.<br>
+                                    <span>Indice : 6 lettres et 6 chiffres se baladent sur l'affiche, le tout dans l'ordre...</span>
+                                </h2>
+                                <div class="input">
+                                    <input type="text" id="Q1">
+                                    <button class="check-1 row justify-content-center align-center">
+                                        <img class="arrow" src="image/vector/arrow-right.svg" alt="flèche vers la droite">
+                                        <img class="none checked" src="image/vector/check.svg" alt="flèche vers la droite">
+                                    </button>
+                                </div>
+                                <p class="wrong none">Le code n’est pas le bon, réessayez !</p>
+                            </div>
+                            <div class="question">
+                                <h2>Combien il y a-t-il de fantôme de pac-man sur l’affiche ?<br>
+                                    <span>Indice: Il se cachent assez bien...</span>
+                                </h2>
+                                <div class="input">
+                                    <input type="text" id="Q2">
+                                    <button class="check-2 row justify-content-center align-center">
+                                        <img class="arrow-2" src="image/vector/arrow-right.svg" alt="flèche vers la droite">
+                                        <img class="none checked-2" src="image/vector/check.svg" alt="flèche vers la droite">
 
-    
+                                    </button>
+                                </div>
+                                <p class="wrong-2 none">Le nombre n’est pas le bon, réessayez !</p>
+                            </div>
+                            <div class="question">
+                                <h2>Trouvez la phrase cachées.<br>
+                                    <span>Indice : Elle se balade quelque part ici...</span>
+                                </h2>
+                                <div class="input">
+                                    <input type="text" id="Q3">
+                                    <div class="check-3 row justify-content-center align-center">
+                                        <img class="arrow-3" src="image/vector/arrow-right.svg" alt="flèche vers la droite">
+                                        <img class="none checked-3  " src="image/vector/check.svg" alt="flèche vers la droite">
+                                    </div>
+                                </div>
+                                <p class="wrong-3 none">La phrase n’est pas la bonne, réessayez !</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">copyrigth la cité du jeu©</p>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/drag.js"></script>
 </body>
 </html>

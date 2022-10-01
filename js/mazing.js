@@ -99,6 +99,7 @@ Mazing.prototype.heroWins = function() {
   this.maze[this.heroPos].classList.remove("door");
   this.heroScore += 50;
   this.gameOver("Tu as Fini !");
+  window.location.pathname = "fin.html"
 };
 
 Mazing.prototype.tryMoveHero = function(pos) {
