@@ -3,6 +3,24 @@
 @import "font";
 @import "buttons";
 
+
+@font-face {
+    font-family: "Marianne-regular";
+    src: url("../typo/Marianne-Regular.woff2");
+
+}
+
+@font-face {
+    font-family: "Marianne-bold";
+    src: url("../typo/Marianne-bold.woff2");
+
+}
+
+@font-face {
+    font-family: "Marianne-light";
+    src: url("../typo/Marianne-light.woff2");
+
+}
 :root {
     // couleur secondaire = --nomCouleur-tauxDeBlancDansLaCouleurArrondiALaDizaineLaPlusProche
     --noir-main: #1F1F1F;
