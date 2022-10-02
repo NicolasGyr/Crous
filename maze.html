@@ -25,6 +25,14 @@
                         </div>
                     </div>
                     <p>Pour vous déplacer, utilisez les flèches directionnelles</p>
+                    <div class="controller row collumn">
+                        <img class="btn btn-red desktop-none" id="up" src="image/vector/arrow-up.svg" alt="flèche vers la droite">
+                        <div class="row">
+                            <img class="btn btn-red desktop-none" id="left" src="image/vector/arrow-left.svg" alt="flèche vers la droite">
+                            <img class="btn btn-red desktop-none" id="right" src="image/vector/arrow-right.svg" alt="flèche vers la droite">
+                        </div>
+                        <img class="btn btn-red desktop-none" id="down" src="image/vector/arrow-down.svg" alt="flèche vers la droite">
+                    </div>
                 </div>
             </div>
             <p class="copyright">copyrigth la cité du jeu©</p>
@@ -38,12 +46,33 @@
             }, false);
         </script>
         <script>
-            let Maze = new MazeBuilder(25, 25);
-            Maze = new FancyMazeBuilder(25, 25);
-            Maze.placeKey();
-            Maze.display("maze_container");
+            
+            if (window.matchMedia("(max-width: 500px)").matches) {
+                let Maze = new MazeBuilder(14, 14);
+                Maze = new FancyMazeBuilder(14, 14);
+                Maze.placeKey();
+                Maze.display("maze_container");
+            } else {
+                if (window.matchMedia("(max-width: 670px)").matches) {
+                    let Maze = new MazeBuilder(15, 15);
+                    Maze = new FancyMazeBuilder(15, 15);
+                    Maze.placeKey();
+                    Maze.display("maze_container");
+                } else {
+                    if (window.matchMedia("(max-width: 950px)").matches) {
+                        let Maze = new MazeBuilder(20, 20);
+                        Maze = new FancyMazeBuilder(20, 20);
+                        Maze.placeKey();
+                        Maze.display("maze_container");
+                    } else {
+                        let Maze = new MazeBuilder(25, 25);
+                        Maze = new FancyMazeBuilder(25, 25);
+                        Maze.placeKey();
+                        Maze.display("maze_container");
+                    }
+                }
+            }
 
         </script>
-        <script src="js/script.js"></script>
     </body>
 </html>

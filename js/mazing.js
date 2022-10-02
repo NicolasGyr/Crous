@@ -114,7 +114,8 @@ Mazing.prototype.tryMoveHero = function(pos) {
   if(nextStep.match(/sentinel/)) {
     this.heroScore = Math.max(this.heroScore - 5, 0);
     if(!this.childMode && this.heroScore <= 0) {
-      this.gameOver("sorry, you didn't make it");
+      this.gameOver("Désolé, tu n'as pas réussi. Essaye encore !");
+      window.location.pathname = "maze.html"
     } else {
       this.setMessage("Aie, ça fait mal !");
     }
@@ -155,44 +156,44 @@ Mazing.prototype.tryMoveHero = function(pos) {
     }
     if(!this.childMode && (this.heroScore <= 0)) {
       this.gameOver("Désolé, tu n'as pas réussi. Essaye encore !");
+      window.location.pathname = "maze.html"
     } else {
       this.setMessage("...");
     }
   }
 };
-
-Mazing.prototype.mazeKeyPressHandler = function(e) {
+Mazing.prototype.mazeKeyPressHandler = function move(e) {
   var tryPos = new Position(this.heroPos.x, this.heroPos.y);
   switch(e.keyCode)
   {
     case 37: // left
-      this.mazeContainer.classList.remove("face-right");
-      tryPos.y--;
-      break;
-
+    this.mazeContainer.classList.remove("face-right");
+    tryPos.y--;
+    break;
+    
     case 38: // up
-      tryPos.x--;
-      break;
-
+    tryPos.x--;
+    break;
+    
     case 39: // right
-      this.mazeContainer.classList.add("face-right");
-      tryPos.y++;
-      break;
-
+    this.mazeContainer.classList.add("face-right");
+    tryPos.y++;
+    break;
+    
     case 40: // down
-      tryPos.x++;
-      break;
-
+    tryPos.x++;
+    break;
+    
     default:
       return;
-
-  }
-  this.tryMoveHero(tryPos);
-  e.preventDefault();
-};
-
-Mazing.prototype.setChildMode = function() {
-  this.childMode = true;
-  this.heroScore = 0;
-  this.setMessage("Trouve tous les trésors");
-};
+      
+    }
+    this.tryMoveHero(tryPos);
+    e.preventDefault();
+  };
+  
+  Mazing.prototype.setChildMode = function() {
+    this.childMode = true;
+    this.heroScore = 0;
+    this.setMessage("Trouve tous les trésors");
+  };
