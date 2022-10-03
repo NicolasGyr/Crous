@@ -426,27 +426,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   --blanc-main: #FFFFFF;
   --gris-main: #D9D9D9;
   --bleu-main: #3A60C4;
+  --bleu-fonce: #010041;
   --vert-main: #52CE34;
   --rouge-main: #E30613;
 }
 
-/* line 17, ../sass/app.scss */
+/* line 18, ../sass/app.scss */
 body {
   overflow-x: hidden;
+  background-color: var(--bleu-fonce);
 }
 
-/* line 20, ../sass/app.scss */
+/* line 22, ../sass/app.scss */
 a {
   text-decoration: none;
 }
 
-/* line 23, ../sass/app.scss */
+/* line 25, ../sass/app.scss */
+h1 {
+  color: var(--blanc-main);
+}
+
+/* line 28, ../sass/app.scss */
+h2 {
+  color: var(--blanc-main);
+}
+
+/* line 31, ../sass/app.scss */
+h3 {
+  color: var(--blanc-main);
+}
+
+/* line 34, ../sass/app.scss */
+h4 {
+  color: var(--blanc-main);
+}
+
+/* line 37, ../sass/app.scss */
 p {
   font-family: "Marianne-regular", sans-serif;
   font-size: 1.2rem;
+  color: var(--blanc-main);
 }
 
-/* line 29, ../sass/app.scss */
+/* line 43, ../sass/app.scss */
+#maze_output {
+  color: var(--blanc-main);
+}
+
+/* line 46, ../sass/app.scss */
 .logo-crous {
   position: absolute;
   max-width: 85px;
@@ -455,39 +483,39 @@ p {
   top: 50px;
 }
 
-/* line 36, ../sass/app.scss */
+/* line 53, ../sass/app.scss */
 .index {
   height: 100vh;
 }
-/* line 38, ../sass/app.scss */
+/* line 55, ../sass/app.scss */
 .index .row {
   height: 100%;
 }
-/* line 40, ../sass/app.scss */
+/* line 57, ../sass/app.scss */
 .index .row h1 {
   font-size: 3rem;
   font-family: "Marianne-bold", sans-serif;
   margin-bottom: 64px;
 }
-/* line 46, ../sass/app.scss */
+/* line 63, ../sass/app.scss */
 .index .cloud-1 {
   position: absolute;
   width: 17%;
   right: 22%;
   top: 20%;
 }
-/* line 52, ../sass/app.scss */
+/* line 69, ../sass/app.scss */
 .index .cloud-2 {
   position: absolute;
   bottom: 30%;
   left: 20%;
 }
 
-/* line 58, ../sass/app.scss */
+/* line 75, ../sass/app.scss */
 .etape-1 {
   width: 100%;
 }
-/* line 60, ../sass/app.scss */
+/* line 77, ../sass/app.scss */
 .etape-1 .cloud-1 {
   position: absolute;
   width: 265px;
@@ -495,78 +523,78 @@ p {
   cursor: move;
   z-index: 1;
 }
-/* line 67, ../sass/app.scss */
+/* line 84, ../sass/app.scss */
 .etape-1 .flying-text {
   position: absolute;
   top: 22%;
   z-index: 0;
 }
-/* line 72, ../sass/app.scss */
+/* line 89, ../sass/app.scss */
 .etape-1 .cloud-2 {
   position: absolute;
   width: 120px;
   left: 51%;
   top: 10%;
 }
-/* line 78, ../sass/app.scss */
+/* line 95, ../sass/app.scss */
 .etape-1 .cloud-3 {
   position: absolute;
   width: 356px;
   right: -10%;
   bottom: 30%;
 }
-/* line 84, ../sass/app.scss */
+/* line 101, ../sass/app.scss */
 .etape-1 .cloud-4 {
   position: absolute;
   width: 176px;
   bottom: 12%;
   left: 25%;
 }
-/* line 91, ../sass/app.scss */
+/* line 108, ../sass/app.scss */
 .etape-1 .easter-egg {
   position: absolute;
   right: 5%;
   top: 5%;
-  color: var(--blanc-main);
+  color: var(--bleu-fonce);
 }
-/* line 97, ../sass/app.scss */
+/* line 114, ../sass/app.scss */
 .etape-1 .titre {
   margin-top: 80px;
 }
-/* line 99, ../sass/app.scss */
+/* line 116, ../sass/app.scss */
 .etape-1 .titre h1 {
   font-family: "Marianne-regular", sans-serif;
   font-size: 2rem;
   text-align: center;
 }
-/* line 105, ../sass/app.scss */
+/* line 122, ../sass/app.scss */
 .etape-1 .form {
   margin-top: 133px;
 }
-/* line 107, ../sass/app.scss */
+/* line 124, ../sass/app.scss */
 .etape-1 .form .questions {
   height: fit-content;
 }
-/* line 109, ../sass/app.scss */
+/* line 126, ../sass/app.scss */
 .etape-1 .form .questions .question {
   margin-bottom: 80px;
 }
-/* line 111, ../sass/app.scss */
+/* line 128, ../sass/app.scss */
 .etape-1 .form .questions .question h2 {
   font-family: "Marianne-bold", sans-serif;
   font-size: 1.1rem;
   margin-bottom: 16px;
 }
-/* line 114, ../sass/app.scss */
+/* line 131, ../sass/app.scss */
 .etape-1 .form .questions .question h2 span {
   font-size: 0.8rem;
   font-family: "Marianne-light", sans-serif;
 }
-/* line 120, ../sass/app.scss */
+/* line 137, ../sass/app.scss */
 .etape-1 .form .questions .question #Q1 {
   text-transform: uppercase;
 }
-/* line 123, ../sass/app.scss */
+/* line 140, ../sass/app.scss */
 .etape-1 .form .questions .question .check-1 {
   width: 54px;
   height: 56px;
@@ -575,19 +603,19 @@ p {
   border: none;
   cursor: pointer;
 }
-/* line 130, ../sass/app.scss */
+/* line 147, ../sass/app.scss */
 .etape-1 .form .questions .question .check-1 svg {
   color: var(--blanc-main);
 }
-/* line 133, ../sass/app.scss */
+/* line 150, ../sass/app.scss */
 .etape-1 .form .questions .question .check-1.green {
   background-color: var(--vert-main);
 }
-/* line 136, ../sass/app.scss */
+/* line 153, ../sass/app.scss */
 .etape-1 .form .questions .question .check-1.red {
   background-color: var(--rouge-main);
 }
-/* line 141, ../sass/app.scss */
+/* line 158, ../sass/app.scss */
 .etape-1 .form .questions .question .check-2 {
   width: 54px;
   height: 56px;
@@ -596,19 +624,19 @@ p {
   cursor: pointer;
   border: none;
 }
-/* line 148, ../sass/app.scss */
+/* line 165, ../sass/app.scss */
 .etape-1 .form .questions .question .check-2 svg {
   color: var(--blanc-main);
 }
-/* line 151, ../sass/app.scss */
+/* line 168, ../sass/app.scss */
 .etape-1 .form .questions .question .check-2.green {
   background-color: var(--vert-main);
 }
-/* line 155, ../sass/app.scss */
+/* line 172, ../sass/app.scss */
 .etape-1 .form .questions .question .check-2.red {
   background-color: var(--rouge-main);
 }
-/* line 159, ../sass/app.scss */
+/* line 176, ../sass/app.scss */
 .etape-1 .form .questions .question .check-3 {
   width: 54px;
   height: 56px;
@@ -617,42 +645,42 @@ p {
   cursor: pointer;
   border: none;
 }
-/* line 166, ../sass/app.scss */
+/* line 183, ../sass/app.scss */
 .etape-1 .form .questions .question .check-3 svg {
   color: var(--blanc-main);
 }
-/* line 169, ../sass/app.scss */
+/* line 186, ../sass/app.scss */
 .etape-1 .form .questions .question .check-3.green {
   background-color: var(--vert-main);
 }
-/* line 173, ../sass/app.scss */
+/* line 190, ../sass/app.scss */
 .etape-1 .form .questions .question .check-3.red {
   background-color: var(--rouge-main);
 }
-/* line 177, ../sass/app.scss */
+/* line 194, ../sass/app.scss */
 .etape-1 .form .questions .question .wrong {
   color: var(--rouge-main);
   font-size: 0.8rem;
   font-family: "Marianne-light", sans-serif;
 }
-/* line 182, ../sass/app.scss */
+/* line 199, ../sass/app.scss */
 .etape-1 .form .questions .question .wrong-2 {
   color: var(--rouge-main);
   font-size: 0.8rem;
   font-family: "Marianne-light", sans-serif;
 }
-/* line 187, ../sass/app.scss */
+/* line 204, ../sass/app.scss */
 .etape-1 .form .questions .question .wrong-3 {
   color: var(--rouge-main);
   font-size: 0.8rem;
   font-family: "Marianne-light", sans-serif;
 }
-/* line 195, ../sass/app.scss */
+/* line 212, ../sass/app.scss */
 .etape-1 .input {
   justify-content: space-between;
   display: flex;
 }
-/* line 198, ../sass/app.scss */
+/* line 215, ../sass/app.scss */
 .etape-1 .input input {
   width: 90%;
   height: 56px;
@@ -660,28 +688,28 @@ p {
   border-radius: 8px;
 }
 
-/* line 207, ../sass/app.scss */
+/* line 224, ../sass/app.scss */
 .curse .cloud-1 {
   position: absolute;
   width: 265px;
   top: 15%;
   z-index: 1;
 }
-/* line 213, ../sass/app.scss */
+/* line 230, ../sass/app.scss */
 .curse .cloud-2 {
   position: absolute;
   width: 120px;
   left: 51%;
   top: 10%;
 }
-/* line 219, ../sass/app.scss */
+/* line 236, ../sass/app.scss */
 .curse .cloud-3 {
   position: absolute;
   width: 356px;
   right: -10%;
   bottom: 30%;
 }
-/* line 225, ../sass/app.scss */
+/* line 242, ../sass/app.scss */
 .curse .cloud-4 {
   position: absolute;
   width: 176px;
@@ -689,37 +717,37 @@ p {
   left: 25%;
 }
 
-/* line 233, ../sass/app.scss */
+/* line 250, ../sass/app.scss */
 .text-cursed h1 {
   font-size: 1.8rem;
   font-family: "Marianne-regular", sans-serif;
   margin-bottom: 10px;
 }
-/* line 238, ../sass/app.scss */
+/* line 255, ../sass/app.scss */
 .text-cursed h2 {
   font-size: 1.6rem;
   font-family: "Marianne-regular", sans-serif;
   margin-bottom: 100px;
 }
-/* line 243, ../sass/app.scss */
+/* line 260, ../sass/app.scss */
 .text-cursed input {
   width: 90%;
   height: 56px;
   border: 1px solid var(--gris-main);
   border-radius: 8px;
 }
-/* line 249, ../sass/app.scss */
+/* line 266, ../sass/app.scss */
 .text-cursed .col-4 {
   height: 50vh;
   margin-top: 10%;
 }
-/* line 252, ../sass/app.scss */
+/* line 269, ../sass/app.scss */
 .text-cursed .col-4 .input {
   justify-content: space-between;
   display: flex;
   width: 100%;
 }
-/* line 256, ../sass/app.scss */
+/* line 273, ../sass/app.scss */
 .text-cursed .col-4 .input .check-cursed {
   width: 54px;
   height: 56px;
@@ -728,37 +756,37 @@ p {
   border: none;
   cursor: pointer;
 }
-/* line 263, ../sass/app.scss */
+/* line 280, ../sass/app.scss */
 .text-cursed .col-4 .input .check-cursed svg {
   color: var(--blanc-main);
 }
-/* line 266, ../sass/app.scss */
+/* line 283, ../sass/app.scss */
 .text-cursed .col-4 .input .check-cursed.red {
   background-color: var(--rouge-main);
 }
 
-/* line 274, ../sass/app.scss */
+/* line 291, ../sass/app.scss */
 .lab .cloud-1 {
   position: absolute;
   width: 265px;
   top: 15%;
   z-index: 1;
 }
-/* line 280, ../sass/app.scss */
+/* line 297, ../sass/app.scss */
 .lab .cloud-2 {
   position: absolute;
   width: 120px;
   right: 10%;
   top: 10%;
 }
-/* line 286, ../sass/app.scss */
+/* line 303, ../sass/app.scss */
 .lab .cloud-3 {
   position: absolute;
   width: 356px;
   right: -10%;
   bottom: 30%;
 }
-/* line 292, ../sass/app.scss */
+/* line 309, ../sass/app.scss */
 .lab .cloud-4 {
   position: absolute;
   width: 176px;
@@ -766,21 +794,21 @@ p {
   left: 10%;
 }
 
-/* line 300, ../sass/app.scss */
+/* line 317, ../sass/app.scss */
 .text-fin h1 {
   margin-top: 25vh;
   font-size: 2.5rem;
   font-family: "Marianne-bold", sans-serif;
   margin-bottom: 24px;
 }
-/* line 306, ../sass/app.scss */
+/* line 323, ../sass/app.scss */
 .text-fin h2 {
   font-size: 1.5rem;
   font-family: "Marianne-regular", sans-serif;
   margin-bottom: 64px;
 }
 
-/* line 313, ../sass/app.scss */
+/* line 330, ../sass/app.scss */
 .copyright {
   position: absolute;
   bottom: 1%;
