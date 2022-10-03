@@ -20,7 +20,7 @@ check3.addEventListener("click", redirect)
 
 
 function checker1() {
-    if (Q1.value === "W75F2D4M3A6D") {
+    if (Q1.value === "A7F6D2M5A4D9") {
         check1.classList.add("green")
         check1.classList.remove("red")
         document.querySelector(".wrong").classList.add('none')
