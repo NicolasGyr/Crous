@@ -36,7 +36,7 @@ function checker1() {
     }    
 }
 function checker2() {
-    if (Q2.value === "8") {
+    if (Q2.value === "7") {
         check2.classList.add("green")
         document.querySelector(".wrong-2").classList.add('none')
         check2.classList.remove("red")
