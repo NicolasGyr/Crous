@@ -4,30 +4,14 @@
 @import "buttons";
 
 
-@font-face {
-    font-family: "Marianne-regular";
-    src: url("../typo/Marianne-Regular.woff2");
 
-}
-
-@font-face {
-    font-family: "Marianne-bold";
-    src: url("../typo/Marianne-bold.woff2");
-
-}
-
-@font-face {
-    font-family: "Marianne-light";
-    src: url("../typo/Marianne-light.woff2");
-
-}
 :root {
     // couleur secondaire = --nomCouleur-tauxDeBlancDansLaCouleurArrondiALaDizaineLaPlusProche
     --noir-main: #1F1F1F;
     --blanc-main: #FFFFFF;
     --gris-main: #D9D9D9;
     --bleu-main: #3A60C4;
-    --vert-main: #52CE34;
+    --vert-main: #52CE34; 
     --rouge-main:#E30613;
 }
 body{
