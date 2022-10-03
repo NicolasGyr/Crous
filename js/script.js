@@ -67,7 +67,7 @@ function checker3() {
 }
 
 function redirect() {
-    if ((Q1.value === "W75F2D4M3A6D") && (Q2.value === "8") && (Q3.value === "Tu m'as trouvé, Sherlock !")) {
+    if ((Q1.value === "A7F6D2M5A4D9") && (Q2.value === "7") && (Q3.value === "Tu m'as trouvé, Sherlock !")) {
         window.location.pathname = "text.html"
     }
 }
